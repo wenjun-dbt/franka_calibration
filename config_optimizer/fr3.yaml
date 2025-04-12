@@ -1,0 +1,10 @@
+# fr3 robot joints to optimize. We are  not optmizing the transforamtation from joint_7 to end effector. 
+joints:
+  - fr3_joint1
+  - fr3_joint2
+  - fr3_joint3
+  - fr3_joint4
+  - fr3_joint5
+  - fr3_joint6
+  - fr3_joint7
+  - ball_joint

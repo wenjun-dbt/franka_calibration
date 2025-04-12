@@ -1,0 +1,15 @@
+data_path:
+- /home/wenjun/franka_calibrate/data/fr3_1/front_left
+- /home/wenjun/franka_calibrate/data/fr3_1/front_right
+- /home/wenjun/franka_calibrate/data/fr3_1/center
+- /home/wenjun/franka_calibrate/data/fr3_1/center_left
+- /home/wenjun/franka_calibrate/data/fr3_1/right
+end_effector: ball_link
+number_samples: null
+offset_distance: 0.05
+regularizer: 0.0001
+robot-name: fr3_1
+root_link: base_link
+saving_steps: true
+urdf: fr3
+variance_noise: 0.0

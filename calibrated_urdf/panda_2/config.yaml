@@ -1,0 +1,11 @@
+data_path:
+- /home/wenjun/franka_calibrate/data/panda_2/front_center
+end_effector: ball_link
+number_samples: null
+offset_distance: 0.05
+regularizer: 0.0001
+robot-name: panda_2
+root_link: base_link
+saving_steps: true
+urdf: panda
+variance_noise: 0.0

@@ -1,0 +1,193 @@
+<robot name="panda">
+  
+  <link name="panda_link0">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.1" /></geometry>
+    </visual>
+  </link>
+  <link name="panda_link1">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.1" /></geometry>
+    </visual>
+  </link>
+  
+  
+  <joint name="panda_joint1" type="revolute">
+    <origin rpy="-2.1570302934605938e-15 9.116554971951815e-16 9.07985422904343e-16" xyz="-7.666128730960197e-16 3.93295402823352e-15 0.3330000000000009" />
+    <parent link="panda_link0" />
+    <child link="panda_link1" />
+    <axis xyz="0 0 1" />
+    <limit effort="87.0" lower="-2.8973" upper="2.8973" velocity="2.175" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973" />
+  </joint>
+  
+  <link name="panda_link2">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.1" /></geometry>
+    </visual>
+  </link>
+  
+  <joint name="panda_joint2" type="revolute">
+    <origin rpy="-1.5727128389564522 -0.0006283573662759884 -0.000801495445361112" xyz="-0.00033585601352520043 -0.000124351961978111 8.016698408388919e-16" />
+    <parent link="panda_link1" />
+    <child link="panda_link2" />
+    <axis xyz="0 0 1" />
+    <limit effort="87.0" lower="-1.7628" upper="1.7628" velocity="2.175" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-1.7628" soft_upper_limit="1.7628" />
+  </joint>
+  
+  <link name="panda_link3">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.1" /></geometry>
+    </visual>
+  </link>
+  
+  <joint name="panda_joint3" type="revolute">
+    <origin rpy="1.5722866660202535 -0.0025615414061454437 0.0022182714851606425" xyz="0.0008415581061296249 -0.31828906004098956 -0.00022311302368457016" />
+    <parent link="panda_link2" />
+    <child link="panda_link3" />
+    <axis xyz="0 0 1" />
+    <limit effort="87.0" lower="-2.8973" upper="2.8973" velocity="2.175" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973" />
+  </joint>
+  
+  <link name="panda_link4">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.1" /></geometry>
+    </visual>
+  </link>
+  
+  <joint name="panda_joint4" type="revolute">
+    <origin rpy="1.5754531021204858 0.02612829588189983 -0.0014877489201642956" xyz="0.08324898167093367 0.00432319724617879 0.0003866467984814442" />
+    <parent link="panda_link3" />
+    <child link="panda_link4" />
+    <axis xyz="0 0 1" />
+    <limit effort="87.0" lower="-3.0718" upper="-0.0698" velocity="2.175" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-3.0718" soft_upper_limit="-0.0698" />
+  </joint>
+  
+  <link name="panda_link5">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.1" /></geometry>
+    </visual>
+  </link>
+  
+  <joint name="panda_joint5" type="revolute">
+    <origin rpy="-1.5676386564121072 0.005116731025763627 0.0010800353334669086" xyz="-0.08381869290150659 0.36598732899053615 0.005652110298437087" />
+    <parent link="panda_link4" />
+    <child link="panda_link5" />
+    <axis xyz="0 0 1" />
+    <limit effort="12.0" lower="-2.8973" upper="2.8973" velocity="2.61" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973" />
+  </joint>
+  
+  <link name="panda_link6">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.1" /></geometry>
+    </visual>
+  </link>
+  
+  <joint name="panda_joint6" type="revolute">
+    <origin rpy="1.5705877108561708 -0.0049512665652793105 0.0053795667756216204" xyz="0.0003736216455026676 0.00026610277469596997 0.020209677103124723" />
+    <parent link="panda_link5" />
+    <child link="panda_link6" />
+    <axis xyz="0 0 1" />
+    <limit effort="12.0" lower="-0.0175" upper="3.7525" velocity="2.61" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-0.0175" soft_upper_limit="3.7525" />
+  </joint>
+  
+  <link name="panda_link7">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.1" /></geometry>
+    </visual>
+  </link>
+  
+  <joint name="panda_joint7" type="revolute">
+    <origin rpy="1.5700518299043966 -0.0016475487146386442 0.008874295082798458" xyz="0.08755852476434364 0.0018069127684683067 0.00022464334637208256" />
+    <parent link="panda_link6" />
+    <child link="panda_link7" />
+    <axis xyz="0 0 1" />
+    <limit effort="12.0" lower="-2.8973" upper="2.8973" velocity="2.61" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973" />
+  </joint>
+  <link name="panda_link8" />
+  <joint name="panda_joint8" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.107" />
+    <parent link="panda_link7" />
+    <child link="panda_link8" />
+  </joint>
+  <joint name="panda_hand_joint" type="fixed">
+    <parent link="panda_link8" />
+    <child link="panda_hand" />
+    <origin rpy="0 0 -0.7853981633974483" xyz="0 0 0" />
+  </joint>
+  
+  <link name="panda_hand">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.1" /></geometry>
+    </visual>
+  </link>
+  <link name="panda_hand_tcp" />
+  <joint name="panda_hand_tcp_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.1034" />
+    <parent link="panda_hand" />
+    <child link="panda_hand_tcp" />
+  </joint>
+  <link name="ball_link">
+    <visual>
+      <material name="red">
+        <color rgba="1 0 0 1" />
+      </material>
+
+      <geometry>
+        <sphere radius="0.005" />
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="ball_joint" type="fixed">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0003153626380465544 -7.607521719633098e-05 0.035347683964663285" />
+    <parent link="panda_hand_tcp" />
+    <child link="ball_link" />
+  </joint>
+  <link name="panda_leftfinger">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.1" /></geometry>
+    </visual>
+  </link>
+  <link name="panda_rightfinger">
+    <visual>
+      <origin rpy="0 0 3.141592653589793" xyz="0 0 0" />
+      <geometry>
+        <cylinder radius="0.05" length="0.1" /></geometry>
+    </visual>
+  </link>
+
+    <joint name="panda_finger_joint1" type="prismatic">
+    <parent link="panda_hand" />
+    <child link="panda_leftfinger" />
+    <origin rpy="0 0 0" xyz="0 0 0.0584" />
+    <axis xyz="0 1 0" />
+    <limit effort="100" lower="0.0" upper="0.04" velocity="0.2" />
+    <dynamics damping="0.3" />
+  </joint>
+  <joint name="panda_finger_joint2" type="prismatic">
+    <parent link="panda_hand" />
+    <child link="panda_rightfinger" />
+    <origin rpy="0 0 0" xyz="0 0 0.0584" />
+    <axis xyz="0 -1 0" />
+    <limit effort="100" lower="0.0" upper="0.04" velocity="0.2" />
+    <mimic joint="panda_finger_joint1" />
+    <dynamics damping="0.3" />
+  </joint>
+</robot>
