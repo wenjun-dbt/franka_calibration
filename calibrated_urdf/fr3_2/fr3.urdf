@@ -1,11 +1,11 @@
-====================== -->
+<?xml version='1.0' encoding='utf-8'?>
 <robot name="fr3">
-  <!-- safety_distance: Minimum safety distance in [m] by which the collision volumes are expanded and which is enforced during robot motions -->
-  <!-- arm_id: Namespace of the robot arm. Serves to differentiate between arms in case of multiple instances. -->
-  <!-- joint_limits: description of the joint limits that comes from a YAML file. Example definition: ${xacro.load_yaml('$(find franka_description)/robots/fr3/joint_limits.yaml')} -->
-  <!-- kinematics: description of the kinematics that comes from a YAML file. Example definition: ${xacro.load_yaml('$(find franka_description)/robots/fr3/kinematics.yaml')} -->
-  <!-- inertials: description of the inertials that comes from a YAML file. Example definition: ${xacro.load_yaml('$(find franka_description)/robots/fr3/inertials.yaml')} -->
-  <!-- dynamics: description of the dynamics that comes from a YAML file. Example definition: ${xacro.load_yaml('$(find franka_description)/robots/fr3/dynamics.yaml')} -->
+  
+  
+  
+  
+  
+  
   <link name="base_link">
       </link>
   <joint name="fr3_base_joint" type="fixed">
@@ -50,7 +50,7 @@
     </inertial>
   </link>
   <joint name="fr3_joint1" type="revolute">
-    <origin rpy="3.3733762219710777e-17 4.578862715028008e-18 4.66009163708547e-17" xyz="1.6596574278000728e-17 2.185901076412172e-17 0.333" />
+    <origin rpy="9.835862032736894e-18 -1.568628146777241e-17 -9.300888715305458e-19" xyz="3.2503017915823636e-17 -1.0052584428671278e-17 0.333" />
     <parent link="fr3_link0" />
     <child link="fr3_link1" />
     <axis xyz="0 0 1" />
@@ -77,7 +77,7 @@
     </inertial>
   </link>
   <joint name="fr3_joint2" type="revolute">
-    <origin rpy="-1.5702715066506185 0.007941137337504007 1.298427633075596e-07" xyz="-0.00013425776669268808 8.484192717283028e-05 1.1711094658997516e-17" />
+    <origin rpy="-1.5694399183345502 0.008109347349404753 1.0266954813848713e-06" xyz="-0.0002610630417672176 3.162243216911802e-05 6.491857691235396e-18" />
     <parent link="fr3_link1" />
     <child link="fr3_link2" />
     <axis xyz="0 0 1" />
@@ -104,7 +104,7 @@
     </inertial>
   </link>
   <joint name="fr3_joint3" type="revolute">
-    <origin rpy="1.5689501866640365 -0.002244734872642126 0.007085349623840395" xyz="0.0027063643344591615 -0.31631456358335236 8.489638431172427e-05" />
+    <origin rpy="1.5683189972748102 -0.0017477803894106437 0.00730424808627864" xyz="0.002533495183565273 -0.31626197441515996 3.217901233781086e-05" />
     <parent link="fr3_link2" />
     <child link="fr3_link3" />
     <axis xyz="0 0 1" />
@@ -131,7 +131,7 @@
     </inertial>
   </link>
   <joint name="fr3_joint4" type="revolute">
-    <origin rpy="1.5672698080107352 0.0018848721251177893 0.0022376154963881603" xyz="0.08253902370104796 0.0002481235245919025 0.0003338585020142311" />
+    <origin rpy="1.5676194275812498 0.001481487056437176 0.001736401255948335" xyz="0.08234090055495948 0.00040039919814801364 0.00028318793219997174" />
     <parent link="fr3_link3" />
     <child link="fr3_link4" />
     <axis xyz="0 0 1" />
@@ -158,7 +158,7 @@
     </inertial>
   </link>
   <joint name="fr3_joint5" type="revolute">
-    <origin rpy="-1.5705560122587232 0.0031467475215024407 -0.0016475145194258494" xyz="-0.08201447793655502 0.3845209430358112 -0.00024762192791827716" />
+    <origin rpy="-1.5713567033269413 0.003565843461630894 -0.0012264927231521708" xyz="-0.08200856939548035 0.3847203771425275 -0.00040672740794162374" />
     <parent link="fr3_link4" />
     <child link="fr3_link5" />
     <axis xyz="0 0 1" />
@@ -185,7 +185,7 @@
     </inertial>
   </link>
   <joint name="fr3_joint6" type="revolute">
-    <origin rpy="1.5664247624517926 7.556958086956879e-05 0.0031463815313703355" xyz="0.000553755709254381 0.0004546741175981036 0.0005218010694095239" />
+    <origin rpy="1.5661988055612805 3.25644008541223e-05 0.0035667292074115" xyz="0.0006687445854766019 0.0003806617612789464 0.0007223020527509455" />
     <parent link="fr3_link5" />
     <child link="fr3_link6" />
     <axis xyz="0 0 1" />
@@ -212,7 +212,7 @@
     </inertial>
   </link>
   <joint name="fr3_joint7" type="revolute">
-    <origin rpy="1.5709326231085654 -1.180922245277525e-09 -6.183175616692984e-05" xyz="0.08780495769014958 5.974036474123278e-07 -0.0004503603919959145" />
+    <origin rpy="1.5708821891077023 3.5812492014648904e-07 -1.7024685193937513e-05" xyz="0.08787630243262287 7.798120106991974e-06 -0.0003730253641811346" />
     <parent link="fr3_link6" />
     <child link="fr3_link7" />
     <axis xyz="0 0 1" />
@@ -256,12 +256,12 @@
     <parent link="fr3_hand" />
     <child link="fr3_hand_tcp" />
   </joint>
+
   <link name="ball_link">
     <visual>
       <material name="red">
         <color rgba="1 0 0 1" />
       </material>
-
       <geometry>
         <sphere radius="0.005" />
       </geometry>
@@ -271,8 +271,7 @@
   <joint name="ball_joint" type="fixed">
     
     
-    <origin rpy="0.0 0.0 0.0" xyz="0.00038913576409863027 -7.461380251631825e-05 0.03193674139611264" />
-
+    <origin rpy="0.0 0.0 0.0" xyz="0.0005817897427710198 0.00017076431392279808 0.03181696256838364" />
     <parent link="fr3_hand_tcp" />
     <child link="ball_link" />
   </joint>

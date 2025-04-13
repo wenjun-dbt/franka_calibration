@@ -1,0 +1,19 @@
+data_path:
+- /home/wenjun/franka_calibrate/data/fr3_2/pick_1
+- /home/wenjun/franka_calibrate/data/fr3_2/pick_2
+- /home/wenjun/franka_calibrate/data/fr3_2/pick_3
+- /home/wenjun/franka_calibrate/data/fr3_2/centerleft_1
+- /home/wenjun/franka_calibrate/data/fr3_2/centerleft_2
+- /home/wenjun/franka_calibrate/data/fr3_2/centerleft_3
+- /home/wenjun/franka_calibrate/data/fr3_2/centerright_1
+- /home/wenjun/franka_calibrate/data/fr3_2/centerright_2
+- /home/wenjun/franka_calibrate/data/fr3_2/centerright_3
+end_effector: ball_link
+number_samples: null
+offset_distance: 0.05
+regularizer: 0.0001
+robot-name: fr3_2
+root_link: base_link
+saving_steps: true
+urdf: fr3
+variance_noise: 0.0
