@@ -1,13 +1,12 @@
 data_path:
-- /home/wenjun/franka_calibrate/data/fr3_2/pick_1
-- /home/wenjun/franka_calibrate/data/fr3_2/pick_2
-- /home/wenjun/franka_calibrate/data/fr3_2/pick_3
-- /home/wenjun/franka_calibrate/data/fr3_2/centerleft_1
-- /home/wenjun/franka_calibrate/data/fr3_2/centerleft_2
-- /home/wenjun/franka_calibrate/data/fr3_2/centerleft_3
-- /home/wenjun/franka_calibrate/data/fr3_2/centerright_1
-- /home/wenjun/franka_calibrate/data/fr3_2/centerright_2
-- /home/wenjun/franka_calibrate/data/fr3_2/centerright_3
+- /mnt/f/Assembly/franka_calibration/data/fr3_2/pick_1
+- /mnt/f/Assembly/franka_calibration/data/fr3_2/pick_2
+- /mnt/f/Assembly/franka_calibration/data/fr3_2/pick_3
+- /mnt/f/Assembly/franka_calibration/data/fr3_2/centerright_1
+- /mnt/f/Assembly/franka_calibration/data/fr3_2/centerright_2
+- /mnt/f/Assembly/franka_calibration/data/fr3_2/centerright_3
+- /mnt/f/Assembly/franka_calibration/data/fr3_2/centerleft_2
+- /mnt/f/Assembly/franka_calibration/data/fr3_2/centerleft_3
 end_effector: ball_link
 number_samples: null
 offset_distance: 0.05
